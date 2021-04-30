@@ -4,13 +4,13 @@ http {
     server {
         listen 80;
         location / {
-            proxy_pass http://${TICKET_UI_CLUSTER_IP}:3000;
+            proxy_pass http://${ticket_ui_cluster_ip}:3000;
         }
         location /api/ {
-            proxy_pass http://${TICKET_API_CLUSTER_IP}:8081;
+            proxy_pass http://${ticket_api_cluster_ip}:8081;
         }
         location /manage {
-            proxy_pass http://${TICKET_API_CLUSTER_IP}:8081;
+            proxy_pass http://${ticket_api_cluster_ip}:8081;
         }
     }
 }
