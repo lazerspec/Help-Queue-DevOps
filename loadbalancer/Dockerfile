@@ -1,4 +1,4 @@
-FROM nginx:latest as runtime
+FROM nginx:latest
 
 COPY loadbalancer/nginx.conf /etc/nginx/nginx.conf
 
