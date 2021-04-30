@@ -22,5 +22,11 @@ pipeline {
             sh "sudo docker push parvir/nginx-loadbalancer:latest"
             }
         }
+        stage('Delete image from server') {
+            steps {
+            sh "echo Deleting image locally"
+            sh "sudo docker image rm parvir/nginx-loadbalancer"
+            }
+        }
     }
 }
