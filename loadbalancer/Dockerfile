@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM nginx:1.19.0-alpine
 ARG ticket_ui_cluster_ip=10
 ARG ticket_api_cluster_ip=10
 
