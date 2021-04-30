@@ -1,0 +1,34 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-loadbalancer
+spec:
+  selector:
+    app: nginx-loadbalancer
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-loadbalancer
+  labels:
+    app: nginx-loadbalancer
+spec:
+  selector:
+    matchLabels:
+      app: nginx-loadbalancer
+  template:
+    metadata:
+      labels:
+        app: nginx-loadbalancer
+    spec:
+      containers:
+      - name: nginx-loadbalancer
+        image: parvir/nginx-loadbalancer:latest
+        imagePullPolicy: "Always"
+        ports:
+        - containerPort: 80
