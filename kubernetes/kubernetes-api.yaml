@@ -17,6 +17,7 @@ spec:
       containers:
       - name: ticket-api
         image: parvir/ticket-api:latest
+        imagePullPolicy: "Always"
         env:
         - name: AWS_USERNAME
           value: "ticketUser"

@@ -17,5 +17,6 @@ spec:
       containers:
       - name: ticket-ui
         image: parvir/ticket-ui:latest
+        imagePullPolicy: "Always"
         ports:
         - containerPort: 3000
