@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ticket-api-deployment
+  labels:
+    app: ticket-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ticket-api
+  template:
+    metadata:
+      labels:
+        app: ticket-api
+    spec:
+      containers:
+      - name: ticket-api
+        image: parvir/ticket-api:latest
+        env:
+        - name: AWS_USERNAME
+          value: "ticketUser"
+        - name: AWS_PASSWORD
+          value: "rootPass"
+        - name: AWS_DB_ENDPOINT
+          value: "prod-database.cfwdf8e0obmi.eu-west-1.rds.amazonaws.com:3306"
+        ports:
+        - containerPort: 8081

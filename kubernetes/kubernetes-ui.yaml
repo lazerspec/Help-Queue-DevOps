@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ticket-ui-deployment
+  labels:
+    app: ticket-ui
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ticket-ui
+  template:
+    metadata:
+      labels:
+        app: ticket-ui
+    spec:
+      containers:
+      - name: ticket-ui
+        image: parvir/ticket-ui:latest
+        ports:
+        - containerPort: 3000
