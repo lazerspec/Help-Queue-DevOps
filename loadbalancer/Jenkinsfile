@@ -13,7 +13,7 @@ pipeline {
             steps {
                sh "echo Building the application..."
                sh "ls"
-               sh "sudo docker build -t parvir/nginx-loadbalancer:latest --build-arg ticket_ui_cluster_ip=${TICKET_UI_CLUSTER_IP} --build-arg ticket_api_cluster_ip=${TICKET_API_CLUSTER_IP} -f loadbalancer/Dockerfile ."
+               sh "sudo docker build -t parvir/nginx-loadbalancer:latest -f loadbalancer/Dockerfile ."
             }
         }
         stage('Deploy to Dockerhub') {
