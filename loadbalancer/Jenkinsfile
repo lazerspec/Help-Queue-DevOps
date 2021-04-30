@@ -13,7 +13,7 @@ pipeline {
             steps {
                sh "echo Building the application..."
                sh "ls"
-               sh "sudo docker build -t parvir/nginx-loadbalancer:latest ."
+               sh "sudo docker build -t parvir/nginx-loadbalancer:latest -f loadbalancer/Dockerfile ."
             }
         }
         stage('Deploy to Dockerhub') {
