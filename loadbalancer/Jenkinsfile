@@ -28,11 +28,5 @@ pipeline {
             sh "sudo docker image rm parvir/nginx-loadbalancer"
             }
         }
-        stage('Re-deploy loadbalancer') {
-               steps {
-                   sh "echo Re-deploying the loadbalancer..."
-                    sh "./kubectl rollout restart deployment nginx-loadbalancer"
-                }
-              }
     }
 }
