@@ -1,4 +1,4 @@
-- hosts: 34.244.75.26
+- hosts: 54.216.21.165
   become: true
   tasks:
   - name: "Transfer script"
@@ -23,17 +23,18 @@
     copy: "src=~/ansible/aws_cred.csv dest=/home/ubuntu/"
   - name: "Use credentials"
     command: "aws configure import --csv file://aws_cred.csv"
-  - name: "Set as default profile"
-    command: "export AWS_PROFILE=qalearner"
   - name: "Update kubeconfig"
-    command: "aws eks update-kubeconfig --name MainCluster"    
+    command: "aws eks update-kubeconfig --name MainCluster --profile qalearner"    
   - name: "Transfer kubernetes script"
     copy: "src=~/ansible/install_kubernetes.sh dest=/home/ubuntu/"
   - name: "Make script executable"
     command: "chmod +x /home/ubuntu/install_kubernetes.sh"
   - name: "Install Kubernetes CLI"
     command: "sh /home/ubuntu/install_kubernetes.sh"
-  - name: "Transfer API kubernetes config"
-    copy: "src=~/kubernetes/rds-credentials.yaml dest=/home/ubuntu/"
-  - name: "Copy API deployment YAML"
-    copy: "src=~/kubernetes/deployment-api.yaml dest=/home/ubuntu/"            
+  - name: "Check kubernetes CLI"
+    command: "./kubectl get pods"
+    ignore_errors: yes  
+  - name: "Transfer kubernetes config"
+    copy: "src=~/.kube/config dest=/home/ubuntu/"
+  
+
