@@ -14,7 +14,7 @@ Diagrams for the project:
 
 Initial ER Diagram:
 
-![Alt text](projectDocs/Initial ER Diagram.png?raw=true "Initial ER Diagram")
+![Alt text](projectDocs/InitialERDiagram.png?raw=true "Initial ER Diagram")
 
 Updated Diagram:
 
@@ -23,7 +23,7 @@ Updated Diagram:
 
 Initial Sequence Diagram:
 
-![Alt text](projectDocs/Help Queue Sequence Diagram.png?raw=true "Initial Sequence Diagram")
+![Alt text](projectDocs/HelpQueueSequenceDiagram.png?raw=true "Initial Sequence Diagram")
 
 
 Risk Assessment:
