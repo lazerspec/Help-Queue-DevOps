@@ -1,9 +1,4 @@
 #!/bin/bash
-sudo apt-get update
-curl https://get.docker.com | sudo bash
-sudo usermod -aG docker $(whoami)
-ubuntu@ip-172-31-13-39:~/ansible$ cat install_jenkins.sh
-#!/bin/bash
 if type apt > /dev/null; then
     pkg_mgr=apt
     java="openjdk-8-jre"
