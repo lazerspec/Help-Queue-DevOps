@@ -32,7 +32,9 @@ Please see in the projectDocs/ folder for the HelpQueueRiskAssessment.pdf
 
 Initial Selenium Testing: 
 
-Please see in the projectDocs/ folder for the Help-Queue.side
+Please see in the projectDocs/ folder for the QA-Video.side for project
+
+https://drive.google.com/file/d/1Au4naT77AjrW2f2A8b7twzfm_S9OvXVr/view?usp=sharing
 
 
 Project Jira Board:
@@ -66,3 +68,5 @@ https://drive.google.com/file/d/1LgxWMzZlzykA7MaSqBXkUgVBpDt9E-DO/view?usp=shari
 25:37 - 26:04 min - Show Jira board
 
 26:05 - 26:51 - Show kubernetes deployed pods
+
+

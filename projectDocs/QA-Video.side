@@ -1,0 +1,285 @@
+{
+  "id": "5b0dbb57-9b3d-412c-b7b0-292de98d6520",
+  "version": "2.0",
+  "name": "QA-Video",
+  "url": "http://a8bdf87c228be4482a6799e695e98734-314258417.eu-west-1.elb.amazonaws.com",
+  "tests": [{
+    "id": "5e1a461b-b61a-4e31-9cd2-af06f0f77bc5",
+    "name": "Click on Departments",
+    "commands": [{
+      "id": "06157021-6bda-4c7b-81cc-bb7bd07ddffb",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "445f8823-a11d-4d86-b58d-7c81d69fc009",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1294x1303",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d12006c3-23be-44ca-adaf-004905020f9d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-menu-submenu-title",
+      "targets": [
+        ["css=.ant-menu-submenu-title", "css:finder"],
+        ["xpath=//li[@id='deptMainMenu']/div", "xpath:idRelative"],
+        ["xpath=//li/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "130ab8e6-80f8-4e2c-b7ec-a7ded0261bdc",
+      "comment": "",
+      "command": "click",
+      "target": "id=Wealth",
+      "targets": [
+        ["id=Wealth", "id"],
+        ["css=#Wealth", "css:finder"],
+        ["xpath=//li[@id='Wealth']", "xpath:attributes"],
+        ["xpath=//ul[@id='departmentMenu$Menu']/li", "xpath:idRelative"],
+        ["xpath=//li/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "acfe4f67-dcd8-4217-9797-d01a8d2ad844",
+    "name": "Click on Unassigned tickets",
+    "commands": [{
+      "id": "a0c8d7c0-257a-4317-8179-95f29a0410f1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ea5eb09-ea27-4a40-bc92-1757bf1de2cb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1294x1303",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4dffc5f1-1fa7-474c-9c47-0b436e74f3fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=#unassigned > span:nth-child(2)",
+      "targets": [
+        ["css=#unassigned > span:nth-child(2)", "css:finder"],
+        ["xpath=//li[@id='unassigned']/span[2]", "xpath:idRelative"],
+        ["xpath=//li[2]/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Unassigned Tickets')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0120e5bb-a5a8-4f30-aff6-539b17bfd575",
+    "name": "Click on Manage Departments",
+    "commands": [{
+      "id": "79dbd46f-de60-49c6-8e80-927c7bebcbc0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a38fc34e-25eb-4c39-866a-28b83f4f280d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1294x1303",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c23763f2-6aea-47c3-9516-ffb734f9b196",
+      "comment": "",
+      "command": "click",
+      "target": "css=#manage-departments > span:nth-child(2)",
+      "targets": [
+        ["css=#manage-departments > span:nth-child(2)", "css:finder"],
+        ["xpath=//li[@id='manage-departments']/span[2]", "xpath:idRelative"],
+        ["xpath=//li[3]/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Manage Departments')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "eb1d77f7-a173-4b68-864c-02da80e75173",
+    "name": "Create a department",
+    "commands": [{
+      "id": "0a9e8e7f-9b56-4ce3-89a5-e781c01ce99a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f366243-a5df-42a9-92d8-070a0d70b96e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1294x1303",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc20c894-32f4-48a6-9532-1a876f82b05e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#manage-departments > span:nth-child(2)",
+      "targets": [
+        ["css=#manage-departments > span:nth-child(2)", "css:finder"],
+        ["xpath=//li[@id='manage-departments']/span[2]", "xpath:idRelative"],
+        ["xpath=//li[3]/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Manage Departments')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4fc2b43-f7b0-4ce6-9384-04ad406fd455",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn:nth-child(9) > span",
+      "targets": [
+        ["css=.ant-btn:nth-child(9) > span", "css:finder"],
+        ["xpath=//div[@id='home-screen']/button/span", "xpath:idRelative"],
+        ["xpath=//main/div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Create a department')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d72e104b-f950-4236-b1dc-f5bf30096459",
+      "comment": "",
+      "command": "click",
+      "target": "id=Classic_departmentName",
+      "targets": [
+        ["id=Classic_departmentName", "id"],
+        ["css=#Classic_departmentName", "css:finder"],
+        ["xpath=//input[@id='Classic_departmentName']", "xpath:attributes"],
+        ["xpath=//form[@id='createForm']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6262b7e0-5564-4fab-9af4-dac19b9f6fa6",
+      "comment": "",
+      "command": "type",
+      "target": "id=Classic_departmentName",
+      "targets": [
+        ["id=Classic_departmentName", "id"],
+        ["css=#Classic_departmentName", "css:finder"],
+        ["xpath=//input[@id='Classic_departmentName']", "xpath:attributes"],
+        ["xpath=//form[@id='createForm']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "for testing"
+    }, {
+      "id": "7de8d1eb-ef4a-48a0-94e6-ee6d62cff358",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn:nth-child(1) > span",
+      "targets": [
+        ["css=.ant-btn:nth-child(1) > span", "css:finder"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91c5b420-8211-4967-a2fe-0b431e6c4468",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-modal-footer > .ant-btn-primary",
+      "targets": [
+        ["css=.ant-modal-footer > .ant-btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[10]", "xpath:attributes"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "45dcb8cc-5a4b-4ac3-b7f8-feaa04c293cd",
+    "name": "Delete department",
+    "commands": [{
+      "id": "701f0dcd-aa24-41a4-8bb5-5f03d85ce671",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "468ad215-42fb-41ea-a94e-2b7e51a690da",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1294x1303",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67acb2af-b740-46e3-ae4d-0f52d3c8efca",
+      "comment": "",
+      "command": "click",
+      "target": "css=#manage-departments > span:nth-child(2)",
+      "targets": [
+        ["css=#manage-departments > span:nth-child(2)", "css:finder"],
+        ["xpath=//li[@id='manage-departments']/span[2]", "xpath:idRelative"],
+        ["xpath=//li[3]/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Manage Departments')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4975adeb-c5d9-444c-8e6f-d7b2ade2a4b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-card:nth-child(9) .ant-btn:nth-child(5) > span",
+      "targets": [
+        ["css=.ant-card:nth-child(9) .ant-btn:nth-child(5) > span", "css:finder"],
+        ["xpath=//div[@id='home-screen']/div[4]/div[2]/button[2]/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/button[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5305c2c-ffc8-4a17-a43a-5fc23126794c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ant-card:nth-child(9) .ant-btn:nth-child(5) > span",
+      "targets": [
+        ["css=.ant-card:nth-child(9) .ant-btn:nth-child(5) > span", "css:finder"],
+        ["xpath=//div[@id='home-screen']/div[4]/div[2]/button[2]/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/button[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd31e7ef-1c12-4f09-b1b9-ba91230005f1",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ant-card:nth-child(9) .ant-btn:nth-child(5) > span",
+      "targets": [
+        ["css=.ant-card:nth-child(9) .ant-btn:nth-child(5) > span", "css:finder"],
+        ["xpath=//div[@id='home-screen']/div[4]/div[2]/button[2]/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/button[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c45ea122-31c8-4e4e-973d-638424fa58a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-modal-footer > .ant-btn-primary",
+      "targets": [
+        ["css=.ant-modal-footer > .ant-btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[12]", "xpath:attributes"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5e3c90db-6e78-4408-bd05-6a2a555f9ba1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5e1a461b-b61a-4e31-9cd2-af06f0f77bc5"]
+  }],
+  "urls": ["http://a8bdf87c228be4482a6799e695e98734-314258417.eu-west-1.elb.amazonaws.com/"],
+  "plugins": []
+}
